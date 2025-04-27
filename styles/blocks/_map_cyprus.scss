@@ -1,0 +1,21 @@
+
+.map-cyprus {
+  position: relative;
+  display: flex;
+  flex-direction:  column;
+  gap: 20px;
+  align-items: center;
+  padding: 80px 0 100px 0;
+}
+
+.map-cyprus__heading {
+  color: rgba(109, 49, 208, 1);
+  font-size: 28px;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.map-cyprus__paragraph {
+color: rgba(67, 67, 100, 1);
+
+}

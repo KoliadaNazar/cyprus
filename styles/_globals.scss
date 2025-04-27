@@ -1,0 +1,69 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  user-select: none;
+  font-family: var(--font--family-base);
+}
+
+a, button , input, textarea, svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a, button {
+    transition: transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(1.06);
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+a, button {
+	text-transform:uppercase;
+  cursor: pointer;
+}
+
+ h1 , h2 , h3, h4, h5, h6 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-family-base)
+ }
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-family-base)
+}
+
+ picture {
+	display:block;
+  height: 100%;
+  width: 100%;
+ }
+
+ svg {
+	color:var(--white);  //change later!!!!!
+ }
+
+::-webkit-scrollbar {
+  height: 10px; /*высот адля горизонтального скролбара*/
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;  
+  -ms-overflow-style: none;     /* Chrome, Safari, Opera */
+}

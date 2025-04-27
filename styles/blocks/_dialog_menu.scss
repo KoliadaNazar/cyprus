@@ -1,0 +1,69 @@
+
+.dialog-menu {
+  position: absolute;
+  z-index: 100;
+  inset:0;
+  width: 100%;
+  height: 100vh;
+  background: var(--white);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+
+}
+
+.dialog-menu--active {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.dialog-menu__inner {
+  position: relative;
+  height: 100%;
+}
+
+.button-close {
+  position: absolute;
+  color: black;
+  right: 50px;
+  top: 40px;
+}
+
+.button-close__svg {
+  color: black;
+}
+
+.dialog-list {
+  text-align: center;
+  padding-top: 150px;
+  display: grid;
+  justify-content:center;
+  grid-row-gap: 40px;
+}
+
+.dialog-list__link {
+  padding: 4px 8px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-family-base);
+}
+
+.dialog-list__link:after {
+  content: '';
+  position:absolute;
+  background: black;
+  width:0;
+  height: 3px;
+  bottom: -8px;
+  left:50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.dialog-list__link:hover:after {
+  width: 100%;
+}
