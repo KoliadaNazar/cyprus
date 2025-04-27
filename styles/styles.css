@@ -773,7 +773,7 @@ svg * {
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   justify-content: center;
-  grid-template-columns: 380px;
+  grid-template-columns: minmax(340px, 380px);
 }
 @media (min-width: 768px) {
   .services-grig {
@@ -787,7 +787,6 @@ svg * {
 }
 
 .services-grid__item {
-  grid-template-columns: 380px;
   border-radius: 20px;
   background: var(--white);
   display: grid;
@@ -800,24 +799,33 @@ svg * {
 }
 
 .services-img-wrap {
-  width: 380px;
+  width: 100%;
   min-height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 480px) {
+  .services-img-wrap {
+    min-width: 380px;
+  }
 }
 
 .services-content {
   color: var(--paragrahp-black-color);
   display: grid;
   place-items: center;
-  padding: 0 30px 8px 30px;
 }
 
 .services-content__heading {
   text-align: center;
-  font-size: 36px;
   font-weight: 600;
   font-family: var(--font-family-base);
+  font-size: 24px;
+}
+@media (min-width: 480px) {
+  .services-content__heading {
+    font-size: 36px;
+  }
 }
 
 .services-content__heading {
@@ -836,6 +844,7 @@ svg * {
     justify-self: center;
     grid-column: 1/3;
     grid-row: 2;
+    max-width: 380px;
   }
 }
 @media (min-width: 1280px) {
@@ -968,7 +977,7 @@ svg * {
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 40px;
-  grid-template-columns: minmax(180px, 280px) minmax(180px, 280px);
+  grid-template-columns: minmax(140px, 280px) minmax(140px, 280px);
   grid-template-rows: 1fr 1fr;
   justify-content: center;
 }

@@ -29,7 +29,7 @@
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   justify-content: center;
-  grid-template-columns:  380px;
+  grid-template-columns:  minmax(340px, 380px);
 
     @include tablet-min-width {
       grid-template-columns:  380px 380px;
@@ -40,7 +40,6 @@
 }
 
 .services-grid__item {
-  grid-template-columns:  380px;
   border-radius: 20px;
   background: var(--white);
   display: grid;
@@ -53,23 +52,31 @@
 }
 
 .services-img-wrap {
-  width:380px;
+  width:100%;
   min-height: 260px;
   object-fit: cover;
+
+  @include mobile-min-width {
+    min-width:380px;
+  }
 }
 
 .services-content {
   color: var(--paragrahp-black-color);
   display:grid;
   place-items: center;
-  padding: 0 30px 8px 30px;
+  
 }
 
 .services-content__heading {
   text-align: center;
-  font-size: 36px;
   font-weight: 600;
   font-family: var(--font-family-base);
+  font-size: 24px;
+
+  @include mobile-min-width {
+    font-size: 36px;
+  }
 }
 
 .services-content__heading {
@@ -88,6 +95,7 @@
     justify-self: center; 
     grid-column: 1 / 3;
     grid-row: 2;
+    max-width: 380px;
   }
 
   @include desktop-min-width {
