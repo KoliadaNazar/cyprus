@@ -32,8 +32,12 @@
   grid-row-gap: 16px;
   justify-items: center;
   color: var(--white);
-  padding:  8% 18% 10% 10%;
-  @include mobile-min-width { grid-row-gap: 30px };
+  padding:  6%;
+  @include mobile-min-width { 
+    grid-row-gap: 30px;
+    padding:  8%;
+    
+  };
   @include tablet-min-width { grid-row-gap: 22px };
  
 
