@@ -490,12 +490,8 @@ svg * {
 }
 @media (min-width: 768px) {
   .slider-section {
-    grid-row-gap: 22px;
-  }
-}
-@media (min-width: 768px) {
-  .slider-section {
     padding: 140px 110px 100px 94px;
+    grid-row-gap: 22px;
     justify-items: start;
   }
 }
@@ -764,9 +760,14 @@ svg * {
   position: absolute;
   content: "";
   bottom: 40px;
-  width: 380px;
+  width: 320px;
   height: 4px;
   background: rgb(253, 191, 163);
+}
+@media (min-width: 480px) {
+  .services-heading:after {
+    width: 380px;
+  }
 }
 
 .services-grig {
@@ -974,7 +975,7 @@ svg * {
 }
 
 .info-section__grid {
-  padding: 0 45px 60px 45px;
+  padding-bottom: 50px;
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 40px;

@@ -18,9 +18,12 @@
   position: absolute;
   content: '';
   bottom: 40px;
-  width: 380px;
+  width: 320px;
   height: 4px;
   background: rgba(253, 191, 163, 1);
+  @include mobile-min-width {
+    width: 380px;
+  }
 }
 
 // main grid

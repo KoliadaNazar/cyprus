@@ -36,15 +36,14 @@
   @include mobile-min-width { 
     grid-row-gap: 30px;
     padding:  8%;
-    
   };
-  @include tablet-min-width { grid-row-gap: 22px };
- 
 
     @include tablet-min-width { 
       padding: 140px 110px 100px 94px;
+      grid-row-gap: 22px;
       justify-items: start;
      }
+
      @include laptop-min-width { 
       padding: 140px 326px 120px 110px;
       justify-items: start;
