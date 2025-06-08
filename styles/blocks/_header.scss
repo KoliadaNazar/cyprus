@@ -32,7 +32,7 @@
   display: none;
 
   @include tablet-min-width {
-    display:flex;
+    display: block;
   }
 }
 

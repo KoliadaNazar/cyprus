@@ -1,28 +1,30 @@
 :root {
---font-family-base: 'Helvetica Neue', sans-serif;
---transition-duration: 0.2s;
---svg-color: blue;
---white: rgb(255,255,255);
+  --font-family-base: 'Helvetica Neue', sans-serif;
+  --transition-duration: 0.2s;
+  --svg-color: blue;
+  --white: rgb(255,255,255);
+  --violet-text: rgba(109, 49, 208, 1);
 
---orange-background-gradient: linear-gradient(to bottom, 
-rgba(254, 252, 158, 1) 0%, rgba(254, 252, 158, 1) 50%, 
-rgba(253, 191, 163, 1) 50%, 
-rgba(253, 191, 163, 1) 100%);
+  --orange-background-gradient: linear-gradient(to bottom, 
+  rgba(254, 252, 158, 1) 0%, rgba(254, 252, 158, 1) 50%, 
+  rgba(253, 191, 163, 1) 50%, 
+  rgba(253, 191, 163, 1) 100%);
 
---buton-background: linear-gradient(to right, 
-rgba(255, 235, 128, 1) 0%,  
-rgba(253, 191, 163, 1) 100%);
+  --buton-background: linear-gradient(to right, 
+  rgba(255, 235, 128, 1) 0%,  
+  rgba(253, 191, 163, 1) 100%);
 
---header-background: linear-gradient(to right, rgba(83, 38, 157, 1) 0%, rgba(109, 49, 208, 1) 100%);
---font-family-base: 'Montserrat', sans-serif;
---font-family-second: 'Nunito Sans', sans-serif;
+  --header-background: linear-gradient(to right, rgba(83, 38, 157, 1) 0%, rgba(109, 49, 208, 1) 100%);
+  --font-family-base: 'Montserrat', sans-serif;
+  --font-family-second: 'Nunito Sans', sans-serif;
 
---home-violet-background: linear-gradient(to bottom, 
-  rgba(130, 140, 222, 1) 0%, 
-  rgba(109, 49, 208, 1) 100%);
+  --home-violet-background: linear-gradient(to bottom, 
+    rgba(130, 140, 222, 1) 0%, 
+    rgba(109, 49, 208, 1) 100%);
 
---paragrahp-black-color:  rgba(67, 67, 100, 1);
---heading-black-color: rgba(96, 88, 102, 1);
+  --paragrahp-black-color:  rgba(67, 67, 100, 1);
+  --heading-black-color: rgba(96, 88, 102, 1);
+  --dark-blue: rgba(67, 67, 100, 1);
 
 }
 
