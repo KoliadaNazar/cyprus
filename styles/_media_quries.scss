@@ -4,6 +4,14 @@ $laptop-min-width: 1000px;
 $tablet-min-width: 768px;
 $mobile-min-width: 480px;
 
+$tamlet-max-width: 767px;
+
+@mixin tamlet-max-width {
+  @media(max-width: $tamlet-max-width ) {
+    @content;
+  }
+}
+
 @mixin mobile-min-width {
   @media(min-width: $mobile-min-width) {
     @content;

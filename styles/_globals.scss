@@ -66,3 +66,12 @@ body::-webkit-scrollbar {
   display: none;  
   -ms-overflow-style: none;     /* Chrome, Safari, Opera */
 }
+
+.visually-hidden {
+  position: absolute;       /* убираем из потока */
+  width: 1px;               /* минимальный размер */
+  height: 1px;
+  overflow: hidden;         /* скрываем содержимое */
+  clip: rect(0 0 0 0);      /* обрезаем */
+  white-space: nowrap;      /* не переносим строки */
+}
