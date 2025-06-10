@@ -1069,7 +1069,7 @@ svg * {
 }
 
 .about__inner {
-  padding: 8px;
+  padding: 16px;
   display: grid;
   color: var(--white);
 }
@@ -1173,7 +1173,7 @@ svg * {
 .about__card-profile {
   background: var(--white);
   border-radius: 20px;
-  max-width: 380px;
+  max-width: 260px;
   max-height: 600px;
   padding: 20px 50px 40px 50px;
   display: grid;
@@ -1182,6 +1182,11 @@ svg * {
   justify-content: center;
   box-shadow: 0px 14px 10px 0px rgba(0, 0, 0, 0.25);
   opacity: 80%;
+}
+@media (min-width: 480px) {
+  .about__card-profile {
+    max-width: 380px;
+  }
 }
 @media (min-width: 768px) {
   .about__card-profile {
