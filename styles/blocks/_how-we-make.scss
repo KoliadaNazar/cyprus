@@ -27,7 +27,7 @@
 
 .process__grid {
   font-family: var(--font-family-base);
-  padding: 0 45px 60px 45px;
+  padding: 12px;
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 40px;
@@ -35,6 +35,10 @@
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-items: start;
+
+  @include mobile-min-width {
+    padding: 0 45px 60px 45px;
+  }
 
     @include tablet-min-width {
       grid-row-gap: 60px;

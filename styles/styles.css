@@ -993,13 +993,18 @@ svg * {
 
 .why-cyprus__grid {
   font-family: var(--font-family-base);
-  padding: 0 45px 60px 45px;
+  padding: 12px;
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 40px;
   grid-template-columns: minmax(140px, 280px) minmax(140px, 280px);
   grid-template-rows: 1fr 1fr;
   justify-content: center;
+}
+@media (min-width: 480px) {
+  .why-cyprus__grid {
+    padding: 0 45px 60px 45px;
+  }
 }
 @media (min-width: 768px) {
   .why-cyprus__grid {
@@ -1252,7 +1257,7 @@ svg * {
 
 .process__grid {
   font-family: var(--font-family-base);
-  padding: 0 45px 60px 45px;
+  padding: 12px;
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 40px;
@@ -1260,6 +1265,11 @@ svg * {
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-items: start;
+}
+@media (min-width: 480px) {
+  .process__grid {
+    padding: 0 45px 60px 45px;
+  }
 }
 @media (min-width: 768px) {
   .process__grid {
